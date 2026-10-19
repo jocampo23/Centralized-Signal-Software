@@ -84,8 +84,17 @@ Build a central receiver server              Jintae built the skeleton, plumbing
                                              workable yet.(10/16 UPDATE done and tested by Jintae)
 
 Build device / modality clients              Not Done, would be one file per signal type,
-                                             some will be easier than others.(10/16 UPDATE EEG client done by shahd
-                                             but missing elegant shutdown, testing and port and serials)
+                                             some will be easier than others.
+
+                                             EEG Client:
+                                             10/19 UPDATE: Added elegant shutdown, testing, CLI port/serial,
+                                             headset discovery, Counter/battery checks, and mock Unicorn
+                                             library for testing without the headset to eeg_client,
+                                             still missing serials. Also added unicorn.h, definitions for all
+                                             functions we're using from API.
+
+                                             Not yet tested, still needs uniforn.lib for windows machine. 
+                                             
 
 Build reusable sender                        Done, needs error handling, right now does
                                              not handle lost connections.
